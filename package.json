@@ -1,6 +1,6 @@
 {
-  "name": "lg-wk19-todo",
-  "version": "0.0.0",
+  "name": "todo",
+  "version": "0.0.1",
   "description": "lg project",
   "scripts": {
     "start": "node ./bin/www"
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/mkleincreative/miscreant-warthog.git"
   },
   "author": "",
-  "contributors":[
+  "contributors": [
     "TJ Walker <tjfwalker+npm@gmail.com>",
     "Michael Klein <miketheklein@gmail.com>"
   ],
