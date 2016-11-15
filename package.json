@@ -1,7 +1,7 @@
 {
-  "name": "todo",
+  "name": "lg-wk19-todo",
   "version": "0.0.0",
-  "private": true,
+  "description": "lg project",
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -14,5 +14,19 @@
     "pug": "~2.0.0-beta6",
     "serve-favicon": "~2.3.0",
     "stylus": "0.54.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkleincreative/miscreant-warthog.git"
+  },
+  "author": "",
+  "contributors":[
+    "TJ Walker <tjfwalker+npm@gmail.com>",
+    "Michael Klein <miketheklein@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkleincreative/miscreant-warthog/issues"
+  },
+  "homepage": "https://github.com/mkleincreative/miscreant-warthog#readme"
 }
