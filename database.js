@@ -54,5 +54,5 @@ const todoList = {
 }
 
 module.exports = {
-  create, db
+  create, list, todoList, todo, db
 };
