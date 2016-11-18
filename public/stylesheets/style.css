@@ -1,7 +1,223 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 1;
 }
-a {
-  color: #00b7ff;
+ol,
+ul {
+  list-style: none;
 }
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ========DEBUGGING======= */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 7%;
+  background-color: #fafafa;
+  font-family: monospace;
+  color: #4e4e4e;
+}
+body .wrapper {
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+body .wrapper,
+body .wrapper .primary,
+body .wrapper .primary .content {
+  display: flex;
+}
+body .wrapper .primary {
+  align-items: center;
+  height: 100%;
+}
+body .wrapper .primary > ul {
+  padding: 0 20% 0 0;
+}
+body .wrapper .primary > ul li {
+  margin: 30% 0;
+  padding: 6% 16% 8% 12%;
+  border: 1px solid rgba(0,0,0,0);
+}
+body .wrapper .primary > ul li::before {
+  content: '_';
+  color: #e1e1e1;
+}
+body .wrapper .primary > ul li:hover,
+body .wrapper .primary > ul li selected {
+  border: 1px solid #e1e1e1;
+  background-color: #fff;
+}
+body .wrapper .primary .content {
+  margin: 0 0 0 1%;
+}
+body .wrapper .primary .content li {
+  margin: 3% 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .wrapper .secondary {
+  display: none;
+  color: #9e9e9e;
+}
+body .wrapper .secondary .reveal {
+  display: initial;
+}
+body .for-help {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 15px 10px 0;
+  color: #e1e1e1;
+}
+/*
+body
+  &, > .content
+    display flex
+  & // TODO: other items later
+    align-items center
+  padding 0 10%
+  .lists, .content
+    li
+      margin 10px 0
+  .lists
+    li
+      padding 10%
+  .content
+    .todos
+      input
+        background-color hsla(0, 0%, 100%, 0)
+        color inherit
+        font-family inherit
+        font-size inherit
+        outline 0
+        border 0
+        border-bottom 1px solid black
+*/

@@ -4,11 +4,19 @@ var { create, list, todoList, todo, db } = require('../database.js')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: req.query.list });
+  Promise.all([todo.all(),list.all()])
+    .then( results => {
+      const todos = results[0]
+      const lists = results[1]
+
+      res.render('index', {todos, lists})
+    })
+    .catch( error => console.log(error))
 });
 
 router.post('/', (req, res, next) => {
-	req.query.
+  var text = req.body.text
+  create.todo(text)
 })
 
 module.exports = router;

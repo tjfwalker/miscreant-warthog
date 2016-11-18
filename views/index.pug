@@ -1,6 +1,16 @@
 extends layout
 
 block content
-	form(method="post" action="/")
-		input(
-		button click me
+  .primary
+    ul.lists
+      for list in lists
+        li.list= list.name
+    .content
+      ul.todos
+        li: input(placeholder="_buy _grow avocados" autofocus)
+        for todo in todos
+          li= todo.title
+  .secondary
+    ul
+      li: p n: new todo
+      li: p [space]: mark done
